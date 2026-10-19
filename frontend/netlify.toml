@@ -1,0 +1,19 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # Update this to your Railway backend URL after deploying backend.
+  # Example: "https://your-railway-app.up.r.appspot.com/api"
+  VITE_API_URL = "https://railway-your-app.up.r.appspot.com/api"
+
+# Cache long-lived assets
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
