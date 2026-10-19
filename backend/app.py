@@ -9,7 +9,7 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
-from data import (
+from .data import (
     PROPERTIES,
     PROJECTS,
     TESTIMONIALS,

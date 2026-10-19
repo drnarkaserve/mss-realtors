@@ -47,11 +47,10 @@ MSSRealtors/
 ### Backend (port 8000)
 
 ```powershell
-cd backend
-python -m venv venv
-.\venv\Scripts\Activate.ps1
+python -m venv backend\venv
+.\backend\venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-uvicorn app:app --reload --port 8000
+uvicorn backend.app:app --reload --port 8000
 ```
 
 ### Frontend (port 5173)
@@ -96,7 +95,7 @@ Double-click `start.bat` (starts both backend and frontend), or run `stop.bat` t
 The backend is a standard Python (FastAPI) app. Railway auto-detects Python from `requirements.txt` at the repo root and runs the command in `Procfile`.
 
 **Required files (at repo root):**
-- `Procfile` — `web: cd backend && python -m uvicorn app:app --host 0.0.0.0 --port $PORT`
+- `Procfile` — `web: python -m uvicorn backend.app:app --host 0.0.0.0 --port $PORT`
 - `requirements.txt` — Python dependencies
 - `runtime.txt` — `python-3.11.4`
 

@@ -3,7 +3,7 @@
 > Project: MSS Realtors — Plots, Flats & Construction  
 > Owner: MSS · Phone: 9866376367 · Ponnur, Guntur, Andhra Pradesh, India
 
-This document covers the full deployment workflow: committing the code to GitHub, deploying the backend to **Railway**, and deploying the frontend to **Netlify**.
+This document covers deploying the backend to **Railway** and the frontend to **Netlify**. A Vercel alternative is included for projects using Vercel.
 
 ---
 
@@ -135,7 +135,7 @@ backend/requirements.txt    ← Same as root requirements.txt
 
 **Procfile content:**
 ```
-web: cd backend && python -m uvicorn app:app --host 0.0.0.0 --port $PORT
+web: python -m uvicorn backend.app:app --host 0.0.0.0 --port $PORT
 ```
 
 **runtime.txt content:**
@@ -170,7 +170,7 @@ railway up
 Railway will:
 1. Detect Python from `requirements.txt`
 2. Install dependencies (`fastapi`, `uvicorn`, `pydantic`)
-3. Run the `Procfile` command: `cd backend && python -m uvicorn app:app --host 0.0.0.0 --port $PORT`
+3. Run the `Procfile` command: `python -m uvicorn backend.app:app --host 0.0.0.0 --port $PORT`
 4. Assign a public URL (e.g., `https://your-app.up.r.appspot.com`)
 
 ### 2.4 Verify the backend is running
@@ -203,6 +203,20 @@ Copy the full URL (e.g., `https://your-app.up.r.appspot.com`). You will use it i
 ### 2.6 Important: Database consideration
 
 This project uses a file-based `enquiries.json` for storing contact enquiries. Railway's filesystem is **ephemeral** — data persists across restarts of the same dyno but is lost on redeployment. For production, consider adding a [PostgreSQL database](https://railway.app/docs/databases/postgresql) or switching to SQLite. For now (small activities), the file-based approach is acceptable.
+
+---
+
+## Vercel alternative
+
+The root `pyproject.toml` configures Vercel to load the FastAPI application from `backend.app:app`, which resolves the "No FastAPI entrypoint found" build error.
+
+Deploy the backend and frontend as separate Vercel projects from this repository:
+
+1. **Backend project:** use the repository root as the Root Directory. Vercel detects the root `requirements.txt` and the configured Python entrypoint. Its API routes are available under `/api`.
+2. **Frontend project:** create another Vercel project for the same repository and set Root Directory to `frontend`. Set `VITE_API_URL` in the project environment to `https://<backend-project-domain>/api`, then redeploy.
+3. Test `https://<backend-project-domain>/api/health` and the frontend site after both deployments.
+
+**Important:** the backend currently stores enquiries in `backend/enquiries.json`. Vercel Functions do not provide persistent writable application storage, so enquiry submissions need an external database before using this setup in production. Do not rely on the JSON file for live submissions.
 
 ---
 
@@ -345,6 +359,7 @@ SudhakarRealtors/
 │   ├── package.json
 │   └── vite.config.js
 ├── Procfile                # Railway start command
+├── pyproject.toml           # Vercel FastAPI entrypoint
 ├── requirements.txt        # Python dependencies (Railway)
 ├── runtime.txt             # Python version (Railway)
 ├── .gitignore              # Git ignore rules
