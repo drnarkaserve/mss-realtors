@@ -208,7 +208,7 @@ This project uses a file-based `enquiries.json` for storing contact enquiries. R
 
 ## Vercel alternative
 
-The root `pyproject.toml` configures Vercel to load the FastAPI application from `backend.app:app`, which resolves the "No FastAPI entrypoint found" build error.
+The root `pyproject.toml` declares the Python project metadata and dependencies Vercel's `uv lock` step requires, and configures Vercel to load the FastAPI application from `backend.app:app`.
 
 Deploy the backend and frontend as separate Vercel projects from this repository:
 
