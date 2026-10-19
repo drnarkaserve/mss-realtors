@@ -1,7 +1,7 @@
 # Sudhakar Realtors — Deployment Guide
 
 > Project: MSS Realtors — Plots, Flats & Construction  
-> Owner: MSS · Phone: 9866376367 · Ponnur, Guntur, Andhra Pradesh, India
+> Owner: MSS · Phone: +1 (610) 968-0033 · Ponnur, Guntur, Andhra Pradesh, India
 
 This document covers deploying the backend to **Railway** and the frontend to **Netlify**. A Vercel alternative is included for projects using Vercel.
 
@@ -192,7 +192,7 @@ Invoke-RestMethod "$url/api/properties"
 Expected output:
 ```
 name     : MSS Realtors
-phone    : 9866376367
+phone    : +1 (610) 968-0033
 email    : mssrealtrs@gmail.com
 ```
 
@@ -319,7 +319,7 @@ Verify everything works end-to-end:
 - [ ] **Properties page**: Property cards with images load correctly
 - [ ] **Contact form**: Enquiry submits successfully (check Railway logs)
 - [ ] **WhatsApp button**: Opens WhatsApp with pre-filled message
-- [ ] **Phone links**: All `tel:9866376367` links work
+- [ ] **Phone links**: All `tel:+16109680033` links work
 - [ ] **404 page**: Any unknown URL shows the 404 page
 - [ ] **Legal & Privacy pages**: Accessible from footer links
 - [ ] **Images**: All local images load (hero, property, project, gallery, blog)
@@ -430,5 +430,5 @@ railway logs
 
 For any deployment issues:
 - Email: **mssrealtrs@gmail.com**
-- Phone: **9866376367**
+- Phone: **+1 (610) 968-0033**
 - Address: Ponnur, Guntur District, Andhra Pradesh, India

@@ -58,7 +58,7 @@ export default function About() {
                 </p>
                 <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.15)', margin: '20px 0' }} />
                 <div style={{ display: 'grid', gap: 10 }} className="small">
-                  <span>📞 <a href="tel:9490434262" style={{ color: '#f6c76b' }}>+91 94904 34262</a></span>
+                  <span>📞 <a href="tel:+16109680033" style={{ color: '#f6c76b' }}>+1 (610) 968-0033</a></span>
                   <span>📍 Bapatla, Andhra Pradesh, India</span>
                   <span>🕘 Mon - Sun: 9:00 AM - 8:00 PM</span>
                 </div>

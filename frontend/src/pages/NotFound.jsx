@@ -10,7 +10,7 @@ export default function NotFound() {
       </p>
       <div className="row" style={{ justifyContent: 'center', marginTop: 28 }}>
         <Link to="/" className="btn btn-gold">Go to Homepage</Link>
-        <a href="tel:9490434262" className="btn btn-outline">📞 Call 9490434262</a>
+        <a href="tel:+16109680033" className="btn btn-outline">📞 Call +1 (610) 968-0033</a>
       </div>
     </div>
   )

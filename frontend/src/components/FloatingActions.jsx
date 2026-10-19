@@ -5,8 +5,8 @@ export default function FloatingActions() {
 
   return (
     <div className="float-actions">
-<a className="float-btn float-call" href="tel:9490434262" aria-label="Call">
-        <span className="tip">Call 9490434262</span>
+<a className="float-btn float-call" href="tel:+16109680033" aria-label="Call">
+        <span className="tip">Call +1 (610) 968-0033</span>
         📞
       </a>
       <button className="float-btn float-enquire" onClick={() => openEnquiry()} aria-label="Enquire">

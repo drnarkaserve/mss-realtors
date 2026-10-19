@@ -77,6 +77,16 @@ def health():
     return {"status": "ok", "service": "MSS Realtors API"}
 
 
+@app.get("/")
+def api_root():
+    return {
+        "service": "MSS Realtors API",
+        "docs": "/docs",
+        "health": "/api/health",
+        "website": "Deploy the frontend as a separate Vercel project rooted at frontend.",
+    }
+
+
 @app.get("/api/company")
 def get_company():
     return COMPANY

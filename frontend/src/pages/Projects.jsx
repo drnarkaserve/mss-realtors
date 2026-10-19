@@ -67,7 +67,7 @@ export default function Projects() {
               </div>
               <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
                 <Link to="/contact" className="btn btn-gold">Get Construction Quote</Link>
-                <a href="tel:9490434262" className="btn btn-outline">📞 Call MSS</a>
+                <a href="tel:+16109680033" className="btn btn-outline">📞 Call MSS</a>
               </div>
             </div>
           </div>

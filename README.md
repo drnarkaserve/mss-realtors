@@ -2,7 +2,7 @@
 
 Full-stack real estate website for **MSS Realtors**, Ponnur, Guntur District, Andhra Pradesh.
 
-**Owner:** MSS Â· **Phone:** 9866376367 Â· **Address:** Ponnur, Guntur, Andhra Pradesh, India
+**Owner:** MSS Â· **Phone:** +1 (610) 968-0033 Â· **Address:** Ponnur, Guntur, Andhra Pradesh, India
 
 ## Features
 

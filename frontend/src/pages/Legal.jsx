@@ -84,7 +84,7 @@
               <h3 style={{ fontSize: 20, marginBottom: 10 }}>Need help?</h3>
               <p className="small muted">For any questions about these terms, contact us:</p>
               <div className="small">
-                <span>ðŸ“ž <a href="tel:9490434262" className="gold" style={{ fontWeight: 800 }}>9490434262</a></span>
+                <span>ðŸ“ž <a href="tel:+16109680033" className="gold" style={{ fontWeight: 800 }}>+1 (610) 968-0033</a></span>
                 <span style={{ marginLeft: 16 }}>ðŸ“§ <a href="mailto:mssrealtrs@gmail.com" className="gold">mssrealtrs@gmail.com</a></span>
               </div>
             </div>

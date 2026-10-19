@@ -97,7 +97,7 @@ export default function Properties() {
             <div className="card center" style={{ padding: 60 }}>
               <h3>No properties found</h3>
               <p className="muted">Try changing the filters, or call MSS at{' '}
-                <a href="tel:9490434262" className="gold">9490434262</a>.
+                <a href="tel:+16109680033" className="gold">+1 (610) 968-0033</a>.
               </p>
             </div>
           ) : (
@@ -111,7 +111,7 @@ export default function Properties() {
               <h3 style={{ fontSize: 19 }}>Can't find what you're looking for?</h3>
               <p className="small muted">Tell us your requirement and budget — we have off-market options too.</p>
             </div>
-            <a className="btn btn-gold" href="tel:9490434262">📞 Call MSS 9490434262</a>
+            <a className="btn btn-gold" href="tel:+16109680033">📞 Call MSS +1 (610) 968-0033</a>
           </div>
         </div>
       </section>

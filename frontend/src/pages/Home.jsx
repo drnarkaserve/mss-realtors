@@ -316,7 +316,7 @@ export default function Home() {
             Looking for a Plot, Flat or Builder in Guntur?
           </h2>
           <p style={{ color: '#fff', margin: '10px 0 22px' }}>Talk to MSS directly today.</p>
-          <a href="tel:9490434262" className="btn" style={{ background: '#fff', color: 'var(--navy)', marginRight: 12 }}>📞 94904 34262</a>
+          <a href="tel:+16109680033" className="btn" style={{ background: '#fff', color: 'var(--navy)', marginRight: 12 }}>📞 +1 (610) 968-0033</a>
           <Link to="/properties" className="btn" style={{ background: 'var(--navy)', color: '#fff' }}>See Properties</Link>
         </div>
       </section>

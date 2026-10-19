@@ -64,7 +64,7 @@ export function EnquiryProvider({ children }) {
       setDone(true)
       setForm(emptyForm)
     } catch (err) {
-      setError(err.message || 'Something went wrong. Please call 9490434262.')
+      setError(err.message || 'Something went wrong. Please call +1 (610) 968-0033.')
     } finally {
       setSubmitting(false)
     }
@@ -105,7 +105,7 @@ export function EnquiryProvider({ children }) {
                     {submitting ? 'Sending...' : 'Submit Enquiry'}
                   </button>
                   <p className="small muted center">
-                    Or call <a href="tel:9490434262" className="gold" style={{ fontWeight: 800 }}>9490434262</a>
+                    Or call <a href="tel:+16109680033" className="gold" style={{ fontWeight: 800 }}>+1 (610) 968-0033</a>
                   </p>
                 </form>
               </>

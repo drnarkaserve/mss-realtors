@@ -35,7 +35,7 @@ export default function Footer() {
           <div>
             <h4 style={{ color: '#fff', marginBottom: 12 }}>Contact</h4>
             <div style={{ display: 'grid', gap: 8 }} className="small">
-              <span>📞 <a href="tel:9490434262" style={{ color: '#f6c76b' }}>+91 94904 34262</a></span>
+              <span>📞 <a href="tel:+16109680033" style={{ color: '#f6c76b' }}>+1 (610) 968-0033</a></span>
               <span>📍 Bapatla, Andhra Pradesh, India</span>
               <span>🕘 Mon - Sun: 9:00 AM - 8:00 PM</span>
             </div>

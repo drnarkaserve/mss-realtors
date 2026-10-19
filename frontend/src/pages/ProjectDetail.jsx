@@ -99,8 +99,8 @@ export default function ProjectDetail() {
                 <button className="btn btn-gold" style={{ width: '100%' }} onClick={() => openEnquiry({ title: project.name, service: 'Book a Site Visit' })}>
                   Book a Site Visit
                 </button>
-                <a href="tel:9490434262" className="btn btn-outline" style={{ width: '100%', marginTop: 10 }}>
-                  📞 Call 9490434262
+                <a href="tel:+16109680033" className="btn btn-outline" style={{ width: '100%', marginTop: 10 }}>
+                  📞 Call +1 (610) 968-0033
                 </a>
               </div>
             </div>
